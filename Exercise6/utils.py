@@ -31,10 +31,10 @@ def plotData(X, y, grid=False):
     # Find Indices of Positive and Negative Examples
     pos = y == 1
     neg = y == 0
-
     # Plot Examples
     pyplot.plot(X[pos, 0], X[pos, 1], 'X', mew=1, ms=10, mec='k')
     pyplot.plot(X[neg, 0], X[neg, 1], 'o', mew=1, mfc='y', ms=10, mec='k')
+
     pyplot.grid(grid)
 
 
